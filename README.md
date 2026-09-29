@@ -7,21 +7,25 @@ It listens to voice commands, converts speech into text, understands commands, p
 ## ✨ Features
 
 ### 🎙️ Voice Interaction
+
 - Voice command recognition using Speech Recognition
 - Text-to-speech responses using `pyttsx3`
 - Natural voice interaction with Jarvis
 
 ### 🧠 Gemini AI
+
 - AI-powered question answering using Google Gemini
 - Maintains a Gemini chat session for conversational interaction
 - Automatically sends unrecognized commands/questions to Gemini
 
 ### 🌐 Web Controls
+
 - Open YouTube
 - Open Google
 - Search Google using voice commands
 
 ### 💻 Application Controls
+
 - Open Google Chrome
 - Open Visual Studio Code
 - Open Calculator
@@ -29,6 +33,7 @@ It listens to voice commands, converts speech into text, understands commands, p
 - Open File Explorer
 
 ### 🔊 System Volume Controls
+
 - Set volume to a specific percentage
 - Increase volume
 - Decrease volume
@@ -39,6 +44,7 @@ It listens to voice commands, converts speech into text, understands commands, p
 - Check current volume
 
 ### 🖥️ System Controls
+
 - Take screenshots
 - Lock the computer
 - Get the current time
@@ -146,28 +152,43 @@ python jarvis.py
 ```
 
 Jarvis will greet you and begin listening for voice commands.
-🎤 Example Commands
-🧠 Ask Gemini AI
+
+## 🎤 Example Commands
+
+### 🧠 Ask Gemini AI
+
 You can ask questions such as:
+
+```text
 "What is artificial intelligence?"
 "Explain machine learning"
 "What is Python?"
 "Tell me about neural networks"
+```
 
 Questions that do not match a built-in command are sent to Gemini AI for a response.
-🌐 Websites
+
+### 🌐 Websites
+
+```text
 "Open YouTube"
 "Go to YouTube"
 
 "Open Google"
 "Go to Google"
+```
 
-🔎 Google Search
+### 🔎 Google Search
+
+```text
 "Search for Python tutorials"
 "Search for artificial intelligence"
 "Google latest Python features"
+```
 
-💻 Open Applications
+### 💻 Open Applications
+
+```text
 "Open Chrome"
 "Open VS Code"
 "Open Visual Studio Code"
@@ -175,8 +196,11 @@ Questions that do not match a built-in command are sent to Gemini AI for a respo
 "Open Notepad"
 "Open File Explorer"
 "Open Explorer"
+```
 
-🕐 Time and Date
+### 🕐 Time and Date
+
+```text
 "What time is it?"
 "Tell me the time"
 "Current time"
@@ -184,60 +208,89 @@ Questions that do not match a built-in command are sent to Gemini AI for a respo
 "What is the date?"
 "Today's date"
 "What day is it?"
+```
 
-🔊 Volume Controls
-Set a specific volume:
+### 🔊 Volume Controls
+
+#### Set a specific volume
+
+```text
 "Set volume to 50"
 "Set the volume to 75"
 "Volume to 30"
+```
 
-Increase volume:
+#### Increase volume
+
+```text
 "Increase volume"
 "Volume up"
 "Increase volume by 10"
 "Turn the volume up by 20"
+```
 
-Decrease volume:
+#### Decrease volume
+
+```text
 "Decrease volume"
 "Volume down"
 "Decrease volume by 10"
 "Turn the volume down by 20"
+```
 
-Mute and unmute:
+#### Mute and unmute
+
+```text
 "Mute"
 "Mute volume"
 
 "Unmute"
 "Unmute volume"
+```
 
-Check the current volume:
+#### Check the current volume
+
+```text
 "What is the volume?"
 "What's the volume?"
 "Current volume"
 "Tell me the volume"
+```
 
-📸 Screenshot
+### 📸 Screenshot
+
+```text
 "Take a screenshot"
 "Take screenshot"
 "Screenshot"
 "Capture my screen"
 "Capture the screen"
+```
 
 The screenshot is saved with a timestamped filename.
-🔒 Lock Computer
+
+### 🔒 Lock Computer
+
+```text
 "Lock my computer"
 "Lock the computer"
 "Lock computer"
 "Lock my PC"
 "Lock PC"
+```
 
-🛑 Exit Jarvis
+### 🛑 Exit Jarvis
+
+```text
 "Stop Jarvis"
 "Exit Jarvis"
 "Quit Jarvis"
 "Goodbye Jarvis"
+```
 
-🧠 How It Works
+## 🧠 How It Works
+
+```text
               🎙️ User Voice
                     │
                     ↓
@@ -261,23 +314,40 @@ The screenshot is saved with a timestamped filename.
                     │
                     ↓
              🔊 Text-to-Speech
+```
 
-Jarvis first checks whether the spoken command matches one of its built-in commands. If it does, Jarvis performs the corresponding action. Otherwise, the input is sent to Gemini AI and the response is spoken back to the user.
-🔐 Security
-The Gemini API key is stored in a .env file and is not included in the repository.
-The following files are excluded using .gitignore:
+Jarvis first checks whether the spoken command matches one of its built-in commands.
+
+If it does, Jarvis performs the corresponding action.
+
+Otherwise, the input is sent to Gemini AI and the response is spoken back to the user.
+
+## 🔐 Security
+
+The Gemini API key is stored in a `.env` file and is not included in the repository.
+
+The following files are excluded using `.gitignore`:
+
+```text
 .env
 .venv/
 __pycache__/
+```
 
 Never commit or share your API key publicly.
-⚠️ Platform Compatibility
+
+## ⚠️ Platform Compatibility
+
 Mini Jarvis currently uses Windows-specific functionality for some system operations, including:
+
 - Windows application launching
 - Windows volume control
 - Windows computer locking
+
 Therefore, some features may not work correctly on macOS or Linux.
-🚀 Future Improvements
+
+## 🚀 Future Improvements
+
 - Wake-word detection
 - More application controls
 - More Windows system controls
@@ -289,9 +359,15 @@ Therefore, some features may not work correctly on macOS or Linux.
 - Graphical user interface
 - Improved natural language command recognition
 - Cross-platform support
-👨‍💻 Author
-Haveesh B A
+
+## 👨‍💻 Author
+
+**Haveesh B A**
+
 B.Tech – Artificial Intelligence and Machine Learning
-📄 License
+
+## 📄 License
+
 This project is licensed under the MIT License.
-See the LICENSE file for details.
+
+See the [LICENSE](LICENSE) file for details.
