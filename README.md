@@ -87,35 +87,63 @@ Mini-Jarvis/
 
 ```bash
 git clone https://github.com/haveesh2599/Mini-Jarvis.git
+```
 
-2. Open the project directory
+### 2. Open the project directory
+
+```bash
 cd Mini-Jarvis
+```
 
-3. Create a virtual environment
+### 3. Create a virtual environment
+
+```bash
 python -m venv .venv
+```
 
-4. Activate the virtual environment
+### 4. Activate the virtual environment
+
 On Windows:
-.venv\Scripts\activate
 
-5. Install the required packages
+```bash
+.venv\Scripts\activate
+```
+
+### 5. Install the required packages
+
+```bash
 pip install -r requirements.txt
+```
 
-🔑 Gemini API Setup
+## 🔑 Gemini API Setup
+
 Mini Jarvis uses the Gemini API for AI-powered responses.
-Create a .env file in the project directory:
+
+Create a `.env` file in the project directory:
+
+```env
 GEMINI_API_KEY=your_api_key_here
+```
 
-Replace your_api_key_here with your own Gemini API key.
+Replace `your_api_key_here` with your own Gemini API key.
+
 The application loads the API key from the environment instead of storing it directly in the Python source code.
-⚠️ Never share or upload your Gemini API key publicly.
 
-▶️ How to Run
+> ⚠️ Never share or upload your Gemini API key publicly.
+
+## ▶️ How to Run
+
 Activate the virtual environment:
+
+```bash
 .venv\Scripts\activate
+```
 
 Then run:
+
+```bash
 python jarvis.py
+```
 
 Jarvis will greet you and begin listening for voice commands.
 🎤 Example Commands
